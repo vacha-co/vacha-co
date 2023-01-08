@@ -5,11 +5,7 @@
     #000000 -- black
     #ffffff -- white
 */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+
 
 .body-text {
   display: flex;
@@ -24,12 +20,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  /*background-color: #D8DAB4;*/
+  background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
 }
 
 .heading {
-  color: white;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -46,31 +42,186 @@ nav {
   }
 
   .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 14px;
     padding: 14px 16px;
   }
 
     .nav-links a:hover:not(.active) {
-      background-color: #D8DAB4;
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        text-decoration-color: #D8DAB4;
+        background-color: white;
+        font-weight: 500;
     }
 
-  .nav-links li a.active {
-    background-color: #D8DAB4;
-  }
+    .nav-links li a.active {
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        text-decoration-color: #D8DAB4;
+        background-color: white;
+        font-weight: 900;
+    }
 
 h4 a {
-  color: white;
+  color: black;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   padding: 14px 16px;
 }
 
 body {
   background-color: #EBE3DC;
+  margin: 0px;
 }
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #D8DAB4;
+    margin: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: small;
+}
+
+td {
+    text-align: center;
+    color: black;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: small;
+}
+
+footer p {
+    margin: 15px;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: x-small;
+}
+
+table {
+    margin: 15px;
+    justify-content:space-evenly;
+    display: flex;
+}
+
